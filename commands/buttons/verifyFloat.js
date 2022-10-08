@@ -3,7 +3,6 @@ const { checkOwnsFloat, asyncCall } = require('../../flow/scripts/float.js');
 const execute = async (interaction, options, emeraldIds) => {
     const eventId = options[0];
     const roleId = options[1];
-    console.log(roleId);
     const ownsFloat = await asyncCall(Object.values(emeraldIds));
  
     if(ownsFloat < 10){
