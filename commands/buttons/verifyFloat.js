@@ -6,7 +6,7 @@ const execute = async (interaction, options, emeraldIds) => {
     const ownsFloat = await asyncCall(Object.values(emeraldIds));
  
     if(ownsFloat < 10){
-        await interaction.editReply({ content: `Your Float owning is less than 10`, ephemeral: true });
+        await interaction.editReply({ content: `Your Float owning is less than 10, join more sharing session to get more poap`, ephemeral: true });
     }else if (ownsFloat >=10 && ownsFloat < 20){
         interaction.member.roles.add('1028123082700894218').catch((e) => console.log(e));
         await interaction.editReply({ content: "You have been given the " + `<@&${'1028123082700894218'}>` + " role.", ephemeral: true });
