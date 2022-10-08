@@ -1,0 +1,27 @@
+{
+  "name": "emerald-bot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.15.0"
+  },
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "author": "Jacob Tucker",
+  "license": "ISC",
+  "dependencies": {
+    "@onflow/fcl": "^0.0.78",
+    "@onflow/types": "^0.0.6",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "node-schedule": "^2.1.0"
+  }
+}
